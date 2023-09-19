@@ -29,7 +29,9 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.assertj:assertj-core:3.24.2'
     compile "com.google.guava:guava:$guavaVersion"
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
 
     compileOnly "com.github.spotbugs:spotbugs-annotations:$spotbugsAnnotationsVersion"
 

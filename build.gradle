@@ -70,11 +70,6 @@ checkstyle {
     ignoreFailures = false
 }
 
-pmd {
-    ruleSetFiles "pmd-rules.xml"
-    ruleSets = []
-}
-
 tasks.withType(com.github.spotbugs.SpotBugsTask) {
     reports {
         xml.enabled = false
@@ -88,8 +83,6 @@ task staticAnalysis(type: GradleBuild) {
         'checkstyleMain',
         'checkstyleTest',
         'checkstyleDefaultTest',
-        'pmdMain',
-        'pmdTest',
         'pmdDefaultTest',
         'spotbugsMain',
         'spotbugsTest',

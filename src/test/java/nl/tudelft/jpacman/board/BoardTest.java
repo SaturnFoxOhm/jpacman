@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 
 /**
-* This is a BoardTest Class
+* This is a BoardTest Class.
 */
 class BoardTest {
     private static final int MAX_WIDTH = 1;

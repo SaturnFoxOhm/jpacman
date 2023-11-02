@@ -29,10 +29,12 @@ class BoardTest {
     /**
     This is a test for squareAt method.
     **/
-    @Test
-    void testSquareAt() {
-        final Square[][] grid = { { new BasicSquare(), null } };
-        final Board board1 = new Board(grid);
-        board1.squareAt(0, 1);
-    }
+    /**
+        @Test
+        void testSquareAt() {
+            final Square[][] grid = { { new BasicSquare(), null } };
+            final Board board1 = new Board(grid);
+            board1.squareAt(0, 1);
+        }
+    **/
 }

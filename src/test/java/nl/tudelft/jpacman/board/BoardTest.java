@@ -1,25 +1,8 @@
 package nl.tudelft.jpacman.board;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
-
-/**
-* Returns an Image object that can then be painted on the screen. 
-* The url argument must specify an absolute <a href="#{@link}">{@link URL}</a>. The name
-* argument is a specifier that is relative to the url argument. 
-* <p>
-* This method always returns immediately, whether or not the 
-* image exists. When this applet attempts to draw the image on
-* the screen, the data will be loaded. The graphics primitives 
-* that draw the image will incrementally paint on the screen. 
-*
-* @param  url  an absolute URL giving the base location of the image
-* @param  name the location of the image, relative to the url argument
-* @return      the image at the specified URL
-* @see         Image
-*/
 
 class BoardTest {
     private static final int MAX_WIDTH = 1;
@@ -29,6 +12,10 @@ class BoardTest {
         { mock(Square.class)},
     };
     private final Board board = new Board(grid);
+
+    /**
+    This is a constructor test.
+    **/
     @Test
     void testBoard() {
         final Square[][] grid = { { new BasicSquare() } };
@@ -36,6 +23,9 @@ class BoardTest {
         assertThat(board1.invariant()).isEqualTo(true);
     }
 
+    /**
+    This is a test for squareAt method.
+    **/
     @Test
     void testSquareAt() {
         final Square[][] grid = { { new BasicSquare(), null } };

@@ -4,6 +4,9 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 
+/**
+* This is a BoardTest Class
+*/
 class BoardTest {
     private static final int MAX_WIDTH = 1;
     private static final int MAX_HEIGHT = 1;
